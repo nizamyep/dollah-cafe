@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Menu | Dollah Café</title>
+</head>
+<body>
+  <header class="sticky-header">
+    <div class="sticky-logo">
+      <span class="cafe-name">Dollah Cafe</span>
+    </div>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li><a href="menu.html" class="nav-item active">Menu</a></li>
+        <li><a href="about.html" class="nav-item">About</a></li>
+        <li><a href="contact.html" class="nav-item">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="menu-section">
+   <h1 class="menu-title">Our Menu</h1>
+    <div class="menu-row">
+      <div class="menu-category">
+        <h2>Foods</h2>
+        <div class="menu-buttons">
+          <button class="menu-toggle" data-target="nasi">Nasi (Rice)</button>
+          <button class="menu-toggle" data-target="mee">Mee (Noodles)</button>
+        </div>
+        <div id="nasi" class="menu-list">    
+          <ul>
+            <li><span>Nasi Goreng Ayam</span><span class="price">RM 8.00</span></li>
+            <li><span>Nasi Goreng Kampung</span><span class="price">RM 7.00</span></li>
+            <li><span>Nasi Goreng Ikan Masin</span><span class="price">RM 8.00</span></li>
+            <li><span>Nasi Goreng Telur Mata</span><span class="price">RM 7.00</span></li>
+            <li><span>Nasi Goreng Daging</span><span class="price">RM 8.00</span></li>
+            <li><span>Nasi Goreng Payak</span><span class="price">RM 9.00</span></li>
+            <li><span>Nasi Goreng Pattaya</span><span class="price">RM 7.00</span></li>
+          </ul>
+        </div>
+        <div id="mee" class="menu-list hidden">
+          <ul>
+            <li><span>Mee Goreng</span><span class="price">RM 6.00</span></li>
+            <li><span>Mee Goreng Payak</span><span class="price">RM 8.00</span></li>
+            <li><span>Mee Goreng Daging</span><span class="price">RM 8.00</span></li>
+            <li><span>Mee Sup Ayam</span><span class="price">RM 8.00</span></li>
+            <li><span>Mee Sup Daging</span><span class="price">RM 8.00</span></li>
+            <li><span>Mee Sup Payak</span><span class="price">RM 7.00</span></li>
+            <li><span>Mee Basah</span><span class="price">RM 6.00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h2>Drinks</h2>
+        <div class="menu-buttons">
+          <button class="menu-toggle" data-target="hot">Hot Drinks</button>
+          <button class="menu-toggle" data-target="cold">Cold Drinks</button>
+        </div>
+        <div id="hot" class="menu-list">
+          <ul>
+            <li><span>Coffee / Tea</span><span class="price">RM 2.00</span></li>
+            <li><span>Coffee-O / Tea-O</span><span class="price">RM 1.50</span></li>
+            <li><span>Milo</span><span class="price">RM 3.00</span></li>
+            <li><span>Horlick</span><span class="price">RM 3.00</span></li>
+            <li><span>Teh Tarik</span><span class="price">RM 2.50</span></li>
+          </ul>
+        </div>
+        <div id="cold" class="menu-list hidden">
+          <ul>
+            <li><span>Coffee / Tea</span><span class="price">RM 3.00</span></li>
+            <li><span>Coffee-O / Tea-O</span><span class="price">RM 2.00</span></li>
+            <li><span>Milo</span><span class="price">RM 4.00</span></li>
+            <li><span>Horlick</span><span class="price">RM 4.00</span></li>
+            <li><span>Ice Lemon Tea</span><span class="price">RM 4.00</span></li>
+            <li><span>Green Tea Lemon / Milk</span><span class="price">RM 4.00</span></li>
+            <li><span>Lemon</span><span class="price">RM 3.00</span></li>
+            <li><span>Bandung</span><span class="price">RM 3.00</span></li>
+            <li><span>Mineral Water</span><span class="price">RM 1.00</span></li>
+            <li><span>Tin Drinks</span><span class="price">RM 3.00</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="menu-category specials">
+      <h2>Specials</h2>
+      <ul>
+        <li><span>ABC</span><span class="price">RM 6.00</span></li>
+        <li><span>ABC Jagung</span><span class="price">RM 6.00</span></li>
+        <li><span>ABC Milo</span><span class="price">RM 6.00</span></li>
+        <li><span>ABC Kacang</span><span class="price">RM 6.00</span></li>
+        <li><span>Milo Dinosaur</span><span class="price">RM 7.00</span></li>
+        <li><span>Cendol</span><span class="price">RM 5.00</span></li>
+        <li><span>ABC Viral (ABC Tinggi)</span><span class="price">RM 15.00</span></li>
+      </ul>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Dollah Cafe. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/slider.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

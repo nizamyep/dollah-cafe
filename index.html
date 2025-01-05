@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Dollah Cafe</title>
+</head>
+
+<body>
+  <header class="sticky-header">
+    <div class="sticky-logo">
+      <span class="cafe-name">Dollah Cafe</span>
+    </div>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li class="dropdown">
+          <a href="index.html" class="nav-item active">Home</a>
+          <ul class="dropdown-menu">
+            <li><a href="#our-products">Product</a></li>
+            <li><a href="#customer-rating">Customer Rating</a></li>
+          </ul>
+        </li>
+        <li><a href="menu.html" class="nav-item">Menu</a></li>
+        <li><a href="about.html" class="nav-item">About</a></li>
+        <li><a href="contact.html" class="nav-item">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="hero">
+  <div class="hero-content">
+    <img src="images/logo.png" alt="Dollah Cafe Logo" class="hero-logo">
+    <h1 class="hero-title">Colloquial phrase</h1>
+    <h1 class="hero-subtitle"><span>[dol-lah kah-fay]</span></h1>
+    <button class="hero-btn">
+      <a href="about.html">About Us!</a>
+    </button>
+  </div>
+  <div class="hero-image">
+    <img src="images/ice-cream.gif" alt="Ice Cream" class="ice-cream-gif">
+  </div>
+</section>
+
+  <section id="our-products" class="our-products">
+    <div class="products-header">
+      <h2>Our Product</h2>
+    </div>
+    <div class="product-tabs">
+      <button class="tab-btn active" data-tab="best-sellers">Best Sellings</button>
+      <button class="tab-btn" data-tab="signature-flavors">Signature Dish</button>
+    </div>
+    <div class="product-content" id="best-sellers">
+       <div class="product-card">
+        <img src="images/mee-basah.png" alt="Mee Basah">
+        <h3>Mee Basah</h3>
+        <p>Noodles that is drowned in a savoury unique soup!</p>
+      </div>
+      <div class="product-card">
+        <img src="images/teh-tarik.png" alt="Teh Tarik">
+        <h3>Teh Tarik</h3>
+        <p>A wondrous bubbly teh tarik!</p>
+      </div>
+      <div class="product-card">
+        <img src="images/abc.png" alt="ABC">
+        <h3>ABC</h3>
+        <p>Tasty ABC that fills you with joy!</p>
+      </div>
+      <div class="product-card">
+        <img src="images/mee-goreng.png" alt="Mee Goreng">
+        <h3>Mee Goreng</h3>
+        <p>The one and only traditional classic!</p>
+      </div>
+    </div>
+    <div class="product-content hidden" id="signature-flavors">
+      <div class="product-card">
+        <img src="images/abctower.png" alt="ABC Tower">
+        <h3>ABC Tower</h3>
+        <p>Our special creation just for you!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="customer-rating" class="customer-rating">
+    <div class="rating-header">
+      <h2>Customer Ratings & Reviews</h2>
+      <p>See what our customers are saying about Dollah Cafe!</p>
+    </div>
+    <div class="carousel">
+      <button class="carousel-btn left-btn">❮</button>
+      <div class="carousel-track">
+        <div class="rating-item active">
+          <h3>Affendi</h3>
+          <div class="stars">★★★★★</div>
+          <p>"Mee Basah is very unique!"</p>
+        </div>
+        <div class="rating-item">
+            <h3>Shai</h3>
+            <div class="stars">★★★★★</div>
+            <p>"The teh tarik is to die for!"</p>
+          </div>
+        <div class="rating-item">
+            <h3>Mal</h3>
+            <div class="stars">★★★★☆</div>
+            <p>"Love the desserts, but the waiting can get long."</p>
+          </div>
+        <div class="rating-item">
+          <h3>Arod Rody</h3>
+          <div class="stars">★★★★☆</div>
+          <p>"Their ABC is awesome!"</p>
+        </div>
+        <div class="rating-item">
+            <h3>Rokiah Nor</h3>
+            <div class="stars">★★★★★</div>
+        </div>
+        <div class="rating-item">
+            <h3>Mohd Shah</h3>
+            <div class="stars">★★★★★</div>
+            <p>"The best."</p>
+        </div>
+        <div class="rating-item">
+            <h3>Nunky A</h3>
+            <div class="stars">★★★★★</div>
+        </div>
+        <div class="rating-item">
+          <h3>Zami</h3>
+          <div class="stars">★★★★★</div>
+          <p>"Dollah Cafe has become my favorite spot for a 'santai'!"</p>
+        </div>
+      </div>
+      <button class="carousel-btn right-btn">❯</button>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Dollah Cafe. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navItems = document.querySelectorAll(".nav-item");
+      navItems.forEach(item => {
+        if (item.href === window.location.href) {
+          item.classList.add("active");
+        }
+      });
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const productContents = document.querySelectorAll(".product-content");
+      tabButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          tabButtons.forEach(btn => btn.classList.remove("active"));
+          productContents.forEach(content => content.classList.add("hidden"));
+          button.classList.add("active");
+          const tabId = button.getAttribute("data-tab");
+          document.getElementById(tabId).classList.remove("hidden");
+        });
+      });
+      const track = document.querySelector(".carousel-track");
+      const slides = Array.from(track.children);
+      const leftButton = document.querySelector(".left-btn");
+      const rightButton = document.querySelector(".right-btn");
+      let currentIndex = 0;
+
+      function updateSlides() {
+        slides.forEach((slide, index) => {
+          slide.classList.remove("active");
+          slide.style.opacity = 0;
+        });
+        slides[currentIndex].classList.add("active");
+        slides[currentIndex].style.opacity = 1;
+      }
+
+      rightButton.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlides();
+      });
+
+      leftButton.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlides();
+      });
+
+      updateSlides();
+    });
+  </script>
+</body>
+</html>
